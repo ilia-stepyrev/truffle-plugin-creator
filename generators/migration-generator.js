@@ -9,7 +9,7 @@ module.exports = (contracts, options) => {
         return;
     }
 
-    outputModule.logCaption('Generate migration', 1, true);
+    outputModule.logCaption('Generate migrations', 1, true);
     const lastMigration = filesModule.getFiles(options.migrations_directory)
         .sort((a, b) => parseInt(getMigration(b) - getMigration(a)))[0];
 

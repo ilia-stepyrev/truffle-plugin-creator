@@ -1,5 +1,4 @@
 module.exports = (config) => {
-    console.log(config.constructor);
     return ({
         contracts: config._.slice(1),
         args: {
