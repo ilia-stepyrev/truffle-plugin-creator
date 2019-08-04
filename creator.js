@@ -19,5 +19,6 @@ module.exports = async (config) => {
     options.contracts.forEach(contract => {
       outputModule.logCaption(`Create: ${contract}`, 1, true);
       generators.forEach(generator => generator(contract, options.args));
+      outputModule.emptyLine();
     });
   }

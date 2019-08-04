@@ -10,7 +10,7 @@ class OutputModule {
     logCaption(caption, level, includeDashes) {
         this.intend = (level - 1) * 2;
         this.log(caption);
-        
+
         if (includeDashes) {
             this.log('-'.repeat(caption.length));
         }
@@ -18,8 +18,12 @@ class OutputModule {
         this.intend += 2;
     }
 
+    emptyLine() {
+        console.log('');
+    }
+
     _getText(message, extraIntend) {
-        return ' '.repeat(this.intend + extraIntend) + message;
+        return ' '.repeat(this.intend + (extraIntend || 0)) +  message;
     }
 };
 
