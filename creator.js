@@ -5,6 +5,9 @@ const outputModule = require('./output-module');
 const generators = [
   require('./generators/contract-generator'),
   require('./generators/test-generator'),
+];
+
+const collectionGenerators = [
   require('./generators/migration-generator'),
 ]
 
@@ -20,5 +23,9 @@ module.exports = async (config) => {
       outputModule.logCaption(`Create: ${contract}`, 1, true);
       generators.forEach(generator => generator(contract, options.args));
       outputModule.emptyLine();
+    });
+
+    collectionGenerators.forEach(generator => {
+      generator(options.contracts, options.args);
     });
   }

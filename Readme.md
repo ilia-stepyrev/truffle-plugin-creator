@@ -27,6 +27,7 @@ truffle run creator <Contract1> <Contract2> <ContractN> <options here>
 |---------|---------| ---------|
 | --test | sol | _(def value)_ Generate *.sol file as a test |
 |  | js | Generate *.js file as a test |
+|  | both | Generate *.js file as a test as well as *.sol file |
 |  | none | Skip test creation |
 | --migration | new | _(def value)_ Put a contract to a new migration file |
 |  | current | Put a contract to the existing migration file |

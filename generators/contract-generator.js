@@ -13,12 +13,13 @@ module.exports = (contract, options) => {
     template.emptyLine();
     template.emptyLine();
     template.addLine(`contract ${contract} {`);
-    template.emptyLine();
 
     if (options.constructor) {
         template.addLine('constructor() public {', 1);
         template.emptyLine();
         template.addLine('}', 1);
+    } else {
+        template.emptyLine();
     }
 
     template.addLine('}');
