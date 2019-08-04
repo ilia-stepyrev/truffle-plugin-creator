@@ -31,3 +31,7 @@ truffle run creator <Contract1> <Contract2> <ContractN> <options here>
 | --migration | new | _(def value)_ Put a contract to a new migration file |
 |  | current | Put a contract to the existing migration file |
 |  | none | Skip migration creation |
+| --constr | true | _(def value)_ Create a constructor for the contract |
+|  | false | Don't create a constructor for the contract |
+| --sol-min | <version> | _(def value = 0.4.22)_ Minimum version of solidity |
+| --sol-max | <version> | _(def value = 0.6.0)_ Maximum version of solidity |
