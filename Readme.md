@@ -36,3 +36,13 @@ truffle run creator <Contract1> <Contract2> <ContractN> <options here>
 |  | false | Don't create a constructor for the contract |
 | --sol-min | <version> | _(def value = 0.4.22)_ Minimum version of solidity |
 | --sol-max | <version> | _(def value = 0.6.0)_ Maximum version of solidity |
+
+## How to extend functionality of the plugin
+In order to extend functionality and generate something else you can create new generator and put it to one of the arrays inside creator.js
+
+There are 2 kinds of generators:
+
+- *regular:* is used to generate something for each contract
+  - arguments are contract and config
+- *collection:* is used to generate something for all contracts at once
+  - arguments are contract and config
