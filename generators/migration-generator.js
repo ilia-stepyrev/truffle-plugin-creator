@@ -23,7 +23,7 @@ module.exports = (contracts, options) => {
 }
 
 function createMigration(contracts, options, lastMigration) {
-    const p = path.join(options.migrations_directory, ((getMigration(lastMigration) + 1) + '_deploy_contract.js'));
+    const p = path.join(options.migrations_directory, ((getMigration(lastMigration) + 1) + '_deploy_contracts.js'));
     const template = new fileTemplate();
 
     contracts.forEach(contract => {
