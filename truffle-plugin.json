@@ -1,5 +1,5 @@
 {
     "commands": {
-        "creator": "creator.js"
+        "create": "creator.js"
     }
 }

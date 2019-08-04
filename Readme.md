@@ -20,7 +20,7 @@ This truffle plugin allows you to automatically create contracts with related st
 ## Usage
 You can create a bunch of contracts like:
 ```sh
-truffle run creator <Contract1> <Contract2> <ContractN> <options here>
+truffle run create <Contract1> <Contract2> <ContractN> <options here>
 ```
 
 | Option | Value | Meaning |

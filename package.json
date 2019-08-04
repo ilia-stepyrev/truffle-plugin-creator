@@ -1,6 +1,6 @@
 {
   "name": "truffle-plugin-creator",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Truffle Plugin which allow you create new contracts with all related stuff",
   "main": "creator.js",
   "scripts": {
