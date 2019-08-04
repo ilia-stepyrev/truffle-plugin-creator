@@ -3,7 +3,7 @@ This truffle plugin allows you to automatically create contracts with related st
 ## Installation
 1. Install the plugin with npm
     ```sh
-    npm install truffle-plugin-creator
+    npm install --save-dev truffle-plugin-creator
     ```
 
 2. Add the plugin to your `truffle.js` or `truffle-config.js` file
